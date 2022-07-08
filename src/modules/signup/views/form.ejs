@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- custom -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container pt-5">
+        <div class="col-sm-10 col-md-6 card" id="signup-frm-container">
+            <div class="card-body">
+                <h2 class="text-center mb-4">Signup</h2>
+    
+                <form id="signup-frm" name="signup-frm" action="/signup" method="post">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 mb-3">
+                            <input type="text" class="form-control" name="first_name" placeholder="First Name" required>
+                        </div>
+                        <div class="col-md-6 col-xs-12 mb-3">
+                            <input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="password" class="form-control" name="password" placeholder="Password" required minlength="8">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="tel" class="form-control mb-3" name="phone" placeholder="Phone number">
+                    </div>
+
+                    <div class="text-center mb-3">
+                        <label for="subscribe">
+                            <input type="checkbox" name="subscribe" id="subscribe" value="1"> Subscribe to our newsletter
+                        </label>
+                    </div>
+
+                    <div class="d-grid text-center mb-3">
+                        <button class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
+
+                <p class="custom-responsive">Custom responsive css demo. Resize window to see color change</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- jquery validation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom -->
+    <script src="js/signup-script.js"></script>
+</body>
+</html>
